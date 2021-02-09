@@ -19,3 +19,14 @@ gradnorm : float
 x : 1-d array
     Финальное значение вектора, минимизирующего функцию потерь
 """
+
+
+def gauss_newton(y, f, j, x0, k=1, tol=1e-4):
+    pass
+
+def lm(y, f, j, x0, lmbd0=1e-2, nu=2, tol=1e-4):
+    pass
+
+
+if __name__ == "__main__":
+    pass
