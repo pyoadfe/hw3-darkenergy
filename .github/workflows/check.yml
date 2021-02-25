@@ -18,12 +18,12 @@ jobs:
         python-version: 3.8
     - name: Install requirements
       run: pip install -r requirements.txt
-    - name: Try opt.py
+    - name: Try cosmology.py
       run: |
         rm -f ./mu-z.png
         rm -f ./cost.png
         rm -f ./parameters.json
-        python opt.py
+        python cosmology.py
     - name: Check mu-z.png
       run: test -e ./mu-z.png
     - name: Check cost.png
